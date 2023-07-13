@@ -1,0 +1,16 @@
+$screen-xs: 30em;
+$screen-sm: 50em;
+$screen-md: 60em;
+$screen-lg: 90em;
+
+@mixin mq($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin mqs($size, $setting) {
+  @media (min-width: $size) {
+    font-size: $setting;
+  }
+}

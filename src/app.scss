@@ -1,0 +1,30 @@
+@use 'style_global' as *;
+@use 'style_components' as *;
+
+body {
+  font-family: $text-main;
+}
+
+h1, h2, h3 {
+  font-family: $text-title;
+  color: $text-primary;
+  margin-bottom: 1rem;   
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.125rem;
+  color: $text-secondary;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: $text-secondary;
+}
+
+
+
