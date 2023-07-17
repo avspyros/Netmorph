@@ -1,7 +1,21 @@
 @use '../style_global' as *;
 
 .container {
-  padding: 4rem;
+  max-width: $screen-lg;
+  margin: auto;
+  padding: 1rem;
+
+  @include mq($screen-xs) {
+    padding: 2rem;
+  }
+
+  @include mq($screen-md) {
+    padding: 3rem;
+  }
+
+  @include mq($screen-lg) {
+    padding: 4rem;
+  }
 }
 
 .nav-wrapper + .content-wrapper {
@@ -9,7 +23,6 @@
   margin-left: 0;
   padding-top: 6em;
   
-
   @include mq($screen-md) {
     margin-left: 18em;
     padding-top: 0;
@@ -34,26 +47,52 @@
   position: relative;
 }
 
+.profile-header {
+  margin-bottom: 2rem;
+}
+
 .profile-box-wrapper {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);
   
   .profile-block {
-    padding: 3.5em;
-    
     border: 1px solid rgba(255, 255, 255, 0.15);
-
+    padding: 2em;
+    
     p {
       margin-bottom: 0;
     }
- 
   }
 
   @include mq($screen-sm) {
     display: flex;
+    flex-wrap: wrap;
+
     .profile-block {
       width: 50%;
     }
+  }
+}
+
+.samples-wrapper {
+  background-color: $bg-neutral;
+}
+
+.sample-block {
+
+  img {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  @include mq($screen-sm) {
+    display: flex;
+    align-items: center;
+  }
+
+  .excerpt-container {
+    flex: 2;
+    padding: 2rem;
   }
 }
 

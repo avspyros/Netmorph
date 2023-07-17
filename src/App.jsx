@@ -5,9 +5,11 @@ import './app.scss'
 
 // COMPONENTS
 import Navbar from './components/Navbar'
+// import Container from './components/Container'
 import Welcome from './components/Welcome'
 import Profile from './components/Profile'
-// import Content from './components/Content'
+import Samples from './components/Samples'
+
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
       <div className="content-wrapper">
         <Welcome />
         <Profile />
-
+        <Samples />
       </div>
       <footer></footer>
     </div>
