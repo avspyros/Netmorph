@@ -12,19 +12,42 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+
+  @include mqs($screen-lg, 3rem);
+}
+
+h2 {
+  font-size: 1.75rem;
+
+  @include mqs($screen-lg, 2.25rem);
+}
+
+h3 {
+  font-size: 1.25rem;
+
+  @include mqs($screen-lg, 1.5rem);
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: $text-secondary;
   line-height: 1.5;
   margin-bottom: 1rem;
+
+  @include mqs($screen-md, 1.125rem);
 }
 
 a {
   color: $text-secondary;
 }
 
+p.description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+
+  @include mqs($screen-md, 1.25rem);
+}
 
 

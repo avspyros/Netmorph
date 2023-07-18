@@ -80,9 +80,43 @@
 
 .sample-block {
 
-  img {
-    max-width: 400px;
-    margin: auto;
+  .preview-container {
+    position: relative;
+    min-height: 25em;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    @include mq($screen-sm) {
+      min-height: 20em;
+      width: 20em;
+    }
+
+    @include mq($screen-lg) {
+      min-height: 25em;
+      width: 25em;
+    }
+  }
+
+  .excerpt-container {
+    flex: 2;
+    padding: 2rem;
+
+    .inner {
+      max-width: 60em;
+    }
   }
 
   @include mq($screen-sm) {
@@ -90,10 +124,7 @@
     align-items: center;
   }
 
-  .excerpt-container {
-    flex: 2;
-    padding: 2rem;
-  }
+
 }
 
 

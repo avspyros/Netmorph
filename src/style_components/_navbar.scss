@@ -14,7 +14,6 @@
   overflow: hidden;
   z-index: 10000;
 
-
   @include mq($screen-md) {
     text-align: right;
     height: 100vh;
@@ -64,7 +63,15 @@ nav {
     height: inherit;
     padding: 0.45rem;
 
-    @include mqs($screen-sm, 1rem);
+    @include mqs($screen-md, 1.125rem);
+
+    @include mqs($screen-lg, 1.25rem);
+
+    @include mq($screen-md) {
+      padding: 0.6rem 0.45rem;
+    }
+
+    
   }
 
   a {
