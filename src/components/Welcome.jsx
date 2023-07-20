@@ -4,7 +4,7 @@ export default function Welcome() {
 
   return (
     <header>
-      <div className="header-wrapper">
+      <div id="welcome" className="header-wrapper">
 
         <Container>
 

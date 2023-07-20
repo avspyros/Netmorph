@@ -1,13 +1,14 @@
-export default function SampleBlock({ title, description }) {
+export default function SampleBlock({ title, description, previewImg, blockBg }) {
+
   return (
-    <div className="sample-block">
-      <div className="preview-container" style={{ backgroundImage: `url("https://fakeimg.pl/600x600")` }}>
+    <div className={`sample-block ${blockBg}`}>
+      <div className="preview-container" style={{ backgroundImage: `url("${previewImg}")` }}>
         <a href="#"></a>
       </div>
       <div className="excerpt-container">
         <div className="inner">
-          <h2>Sample Title</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nisi quo sed illum magnam repudiandae, eius suscipit quisquam dolores incidunt sapiente sequi ducimus.</p>
+          <h2>{title}</h2>
+          <p>{description}</p>
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+import AnchorLink from "react-anchor-link-smooth-scroll"
+
 export default function Navbar() {
 
   return (
@@ -5,10 +7,10 @@ export default function Navbar() {
       <div className="nav-inner">
         <nav>
           <ul>
-            <li><a href="#" className="nav-link">welcome</a></li>
-            <li><a href="#" className="nav-link">profile</a></li>
-            <li><a href="#" className="nav-link">samples</a></li>
-            <li><a href="#" className="nav-link">get in touch</a></li>
+            <li><AnchorLink href="#welcome" className="nav-link">welcome</AnchorLink></li>
+            <li><AnchorLink href="#profile" className="nav-link">profile</AnchorLink></li>
+            <li><AnchorLink href="#samples" className="nav-link">samples</AnchorLink></li>
+            <li><AnchorLink href="#" className="nav-link">get in touch</AnchorLink></li>
           </ul>
         </nav>
       </div>
