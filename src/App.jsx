@@ -7,21 +7,27 @@ import Navbar from './components/Navbar'
 import Welcome from './components/Welcome'
 import Profile from './components/Profile'
 import Samples from './components/Samples'
+import Footer from './components/Footer'
 
 import { useState } from 'react'
 
 function App() {
 
   return (
+
     <div className="app-wrapper">
       <Navbar />
       <div className="content-wrapper">
         <Welcome />
         <Profile />
         <Samples />
+        <Footer />
       </div>
-      <footer></footer>
+
     </div>
+
+
+
   )
 }
 
