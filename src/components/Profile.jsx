@@ -1,6 +1,6 @@
 // COMPONENTS
 import Container from './Container'
-import ProfileHeader from './ProfileHeader'
+import BlockHeader from './BlockHeader'
 import ProfileBlock from './ProfileBlock'
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCode } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +15,11 @@ export default function Profile() {
 
       <Container>
 
-        <ProfileHeader />
+        <BlockHeader
+          title="Profile Section"
+          description="Aut, eos quasi esse ad saepe tempora beatae sapiente incidunt ipsam amet"
+        />
+
         <div className="profile-box-wrapper">
           <ProfileBlock
             title="1st Feature Title"

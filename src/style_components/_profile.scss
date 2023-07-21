@@ -1,0 +1,33 @@
+@use '../style_global' as *;
+
+.profile-wrapper {
+  background-color: $bg-lighter;
+  position: relative;
+}
+
+.block-header {
+  margin-bottom: 2rem;
+}
+
+.profile-box-wrapper {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  
+  .profile-block {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 2em;
+    
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq($screen-sm) {
+    display: flex;
+    flex-wrap: wrap;
+
+    .profile-block {
+      width: 50%;
+    }
+  }
+}

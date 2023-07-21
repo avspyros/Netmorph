@@ -10,7 +10,7 @@ export default function Navbar() {
             <li><AnchorLink href="#welcome" className="nav-link">welcome</AnchorLink></li>
             <li><AnchorLink href="#profile" className="nav-link">profile</AnchorLink></li>
             <li><AnchorLink href="#samples" className="nav-link">samples</AnchorLink></li>
-            <li><AnchorLink href="#" className="nav-link">get in touch</AnchorLink></li>
+            <li><AnchorLink href="#contact" className="nav-link">get in touch</AnchorLink></li>
           </ul>
         </nav>
       </div>

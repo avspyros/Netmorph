@@ -1,0 +1,35 @@
+@use '../style_global' as *;
+
+.footer-wrapper {
+
+  background-color: $bg-dark;
+
+  p.footer-text {
+    
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+
+    span {
+      display: block;
+    }
+
+    span:nth-child(2) {
+      display: none;
+    }
+
+    @include mq($screen-sm) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      span:nth-child(2) {
+        display: block;
+        padding: 0 0.5rem;
+      }
+    }
+
+  }
+
+}

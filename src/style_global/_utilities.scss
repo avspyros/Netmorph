@@ -1,0 +1,13 @@
+@use 'colors' as *;
+
+.bg-neutral {
+  background-color: $bg-neutral;
+}
+
+.bg-neutral-deep {
+  background-color: $bg-neutral-accent-1;
+}
+
+.bg-neutral-deeper {
+  background-color: $bg-neutral-accent-2;
+}

@@ -1,0 +1,14 @@
+@use '../style_global' as *;
+
+.header-wrapper {
+  background-color: $bg-dark;
+  position: relative;
+  min-height: calc(100vh - 6em);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mq($screen-md) {
+    height: 100vh;
+  }
+}

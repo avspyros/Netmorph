@@ -1,0 +1,25 @@
+@use '../style_global' as *;
+
+.contact-wrapper {
+  background-color: $bg-darker;
+}
+
+.contact-form {
+
+  label, input, textarea {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  input, textarea {
+    text-decoration: none;
+    appearance: none;
+    height: 2.75em;
+    width: 100%;
+    background: $bg-transparent;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    border-radius: 0.25em;  
+    outline: 0;
+    padding: 0 1em;
+  }
+}

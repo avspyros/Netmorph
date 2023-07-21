@@ -1,15 +1,14 @@
 @use '../style_global' as *;
 
-.bg-neutral {
-  background-color: $bg-neutral;
-}
-
-.bg-neutral-deep {
-  background-color: $bg-neutral-accent-1;
-}
-
-.bg-neutral-deeper {
-  background-color: $bg-neutral-accent-2;
+.nav-wrapper + .content-wrapper {
+  min-height: 100vh;
+  margin-left: 0;
+  padding-top: 6em;
+  
+  @include mq($screen-md) {
+    margin-left: 18em;
+    padding-top: 0;
+  }
 }
 
 .container {
@@ -29,146 +28,4 @@
     padding: 4rem;
   }
 }
-
-.nav-wrapper + .content-wrapper {
-  min-height: 100vh;
-  margin-left: 0;
-  padding-top: 6em;
-  
-  @include mq($screen-md) {
-    margin-left: 18em;
-    padding-top: 0;
-  }
-}
-
-.header-wrapper {
-  background-color: $bg-dark;
-  position: relative;
-  min-height: calc(100vh - 6em);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @include mq($screen-md) {
-    height: 100vh;
-  }
-}
-
-.profile-wrapper {
-  background-color: $bg-lighter;
-  position: relative;
-}
-
-.profile-header {
-  margin-bottom: 2rem;
-}
-
-.profile-box-wrapper {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  
-  .profile-block {
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 2em;
-    
-    p {
-      margin-bottom: 0;
-    }
-  }
-
-  @include mq($screen-sm) {
-    display: flex;
-    flex-wrap: wrap;
-
-    .profile-block {
-      width: 50%;
-    }
-  }
-}
-
-.samples-wrapper {
-  background-color: $bg-neutral;
-}
-
-.sample-block {
-
-  .preview-container {
-    position: relative;
-    min-height: 25em;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    a {
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-    }
-
-    @include mq($screen-sm) {
-      min-height: 20em;
-      width: 20em;
-    }
-
-    @include mq($screen-lg) {
-      min-height: 25em;
-      width: 25em;
-    }
-  }
-
-  .excerpt-container {
-    flex: 2;
-    padding: 2rem;
-
-    .inner {
-      max-width: 60em;
-    }
-  }
-
-  @include mq($screen-sm) {
-    display: flex;
-    align-items: center;
-  }
-
-
-}
-
-.footer-wrapper {
-  background-color: $bg-dark;
-
-  p.footer-text {
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-
-    span {
-      display: block;
-    }
-
-    span:nth-child(2) {
-      display: none;
-    }
-
-    @include mq($screen-sm) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-
-      span:nth-child(2) {
-        display: block;
-        padding: 0 0.5rem;
-      }
-    }
-
-  }
-}
-
-
 
