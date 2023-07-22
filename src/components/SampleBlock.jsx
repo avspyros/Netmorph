@@ -7,7 +7,7 @@ export default function SampleBlock({ title, description, previewImg, blockBg })
       </div>
       <div className="excerpt-container">
         <div className="inner">
-          <h2>{title}</h2>
+          <h3>{title}</h3>
           <p>{description}</p>
         </div>
       </div>

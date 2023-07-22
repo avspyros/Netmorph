@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+
 import Container from './Container'
 import BlockHeader from './BlockHeader'
 
@@ -15,7 +18,6 @@ export default function Contact() {
         <div className="contact-blocks">
 
           <div className="contact-form">
-
             <div className="form-row">
               <div className="form-col">
                 <label htmlFor="name">Name</label>
@@ -29,15 +31,30 @@ export default function Contact() {
             <div className="form-row">
               <div className="form-col">
                 <label>Message</label>
-                <textarea name="message" rows={4} cols={40} />
+                <textarea name="message" rows={15} cols={15} />
               </div>
             </div>
-
-
           </div>
 
           <div className="contact-info">
-
+            <div>
+              <h3>Adress</h3>
+              <p>Parasiou 13</p>
+              <p>10440 Athens</p>
+              <p>Greece</p>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>avspyros@gmail.com</p>
+            </div>
+            <div>
+              <h3>Phone</h3>
+              <p>+306975166683</p>
+            </div>
+            <div>
+              <h3>Social</h3>
+              <p>+306975166683</p>
+            </div>
           </div>
 
         </div>
