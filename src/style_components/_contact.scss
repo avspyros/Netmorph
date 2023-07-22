@@ -60,4 +60,12 @@
     font-size: 98%;
     margin-bottom: 0.25rem;
   }
+
+  svg {
+    display: inline-block;
+    fill: $text-secondary;
+    color: $text-secondary;
+    max-width: 2rem;
+  }
+
 }

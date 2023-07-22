@@ -2,12 +2,8 @@
 import Container from './Container'
 import BlockHeader from './BlockHeader'
 import ProfileBlock from './ProfileBlock'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 export default function Profile() {
-
-  // const codeIcon = <FontAwesomeIcon icon={faCode} style={{ fontSize: 36, color: "white" }} />
 
   return (
 

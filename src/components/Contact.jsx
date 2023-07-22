@@ -1,8 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-
 import Container from './Container'
 import BlockHeader from './BlockHeader'
+import IconLinkedin from './IconLinkedin'
 
 export default function Contact() {
   return (
@@ -53,7 +51,7 @@ export default function Contact() {
             </div>
             <div>
               <h3>Social</h3>
-              <p>+306975166683</p>
+              <IconLinkedin url="https://www.linkedin.com/in/avspyros/" />
             </div>
           </div>
 
