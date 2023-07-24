@@ -4,9 +4,20 @@
   background-color: $bg-darker;
 }
 
-.contact-form {
+.contact-blocks {
+  @include mq($screen-md) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
 
+.contact-form {
+  flex: 2;
   margin-bottom: 3rem;
+
+  @include mq($screen-md) {
+    padding-right: 3rem;
+  }
 
   label {
     display: block;
@@ -46,14 +57,26 @@
      
     }
   }
+
+  .form-row:last-child {
+    margin-top: 2rem;
+  }
 }
 
 .contact-info {
+  flex: 1;
   border-top: 1px solid $border-color;
   padding-top: 3rem;
 
+  @include mq($screen-md) {
+    border-top: 0;
+    border-left: 1px solid $border-color;
+    padding-top: 0;
+    padding-left: 3rem;
+  }
+
   div {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   p {
@@ -62,10 +85,30 @@
   }
 
   svg {
-    display: inline-block;
+    display: inline-block; 
     fill: $text-secondary;
     color: $text-secondary;
-    max-width: 2rem;
+    max-width: 2.5rem;
+    transition: all 0.3s;
+
+    &:hover {
+      fill: $text-primary;
+    }
+  }
+
+  .social-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    * {
+      width: 2.5rem;
+      padding-right: 0.75rem;
+    }
+
+    a:last-child {
+      padding: 0;
+    }
   }
 
 }

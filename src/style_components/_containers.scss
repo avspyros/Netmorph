@@ -3,10 +3,10 @@
 .nav-wrapper + .content-wrapper {
   min-height: 100vh;
   margin-left: 0;
-  padding-top: 6em;
+  padding-top: 6rem;
   
   @include mq($screen-md) {
-    margin-left: 18em;
+    margin-left: 18rem;
     padding-top: 0;
   }
 }

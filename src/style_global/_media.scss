@@ -1,7 +1,7 @@
-$screen-xs: 30em;
-$screen-sm: 50em;
-$screen-md: 60em;
-$screen-lg: 90em;
+$screen-xs: 30rem;
+$screen-sm: 50rem;
+$screen-md: 60rem;
+$screen-lg: 90rem;
 
 @mixin mq($size) {
   @media (min-width: $size) {

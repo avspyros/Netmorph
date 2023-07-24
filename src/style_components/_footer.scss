@@ -18,7 +18,7 @@
       display: none;
     }
 
-    @include mq($screen-sm) {
+    @include mq($screen-lg) {
       display: flex;
       align-items: center;
       justify-content: center;

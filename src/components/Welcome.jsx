@@ -1,4 +1,5 @@
 import Container from './Container'
+import Button from './Button'
 
 export default function Welcome() {
 
@@ -11,9 +12,12 @@ export default function Welcome() {
           <h1>Main Title</h1>
           <p className='description'>Qui tenetur amet nisi, voluptate totam voluptates possimus tempora assumenda vitae quas in earum voluptas ad maiores esse laboriosam ipsum. Deserunt eum nihil doloribus, nobis dolores quis nostrum quibusdam dolorum.
           </p>
-          <div className="btn-container">
-            <a href="#" className="btn-link">Learn more</a>
-          </div>
+
+          <Button
+            text="Learn More"
+            url="https://github.com/avspyros"
+            btnType="btnLink"
+          />
 
         </Container>
 

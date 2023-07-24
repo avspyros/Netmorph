@@ -9,7 +9,7 @@ export default function Footer() {
 
         <Container>
 
-          <p className='footer-text'><span>&copy; {currentYear} Avspyros Online Portfolio.</span> <span>|</span> <span>Designed by Spyros Avgoustatos</span></p>
+          <p className='footer-text'><span>&copy; {currentYear} Avspyros Online Portfolio V1.</span> <span>|</span> <span>Designed by Spyros Avgoustatos</span></p>
 
         </Container>
 

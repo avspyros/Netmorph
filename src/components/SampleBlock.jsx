@@ -1,3 +1,5 @@
+import Button from './Button'
+
 export default function SampleBlock({ title, description, previewImg, blockBg }) {
 
   return (
@@ -9,6 +11,11 @@ export default function SampleBlock({ title, description, previewImg, blockBg })
         <div className="inner">
           <h3>{title}</h3>
           <p>{description}</p>
+          <Button
+            text="Learn More"
+            url="https://github.com/avspyros"
+            btnType="btnLink"
+          />
         </div>
       </div>
     </div>
