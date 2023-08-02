@@ -11,21 +11,18 @@
   }
 }
 
+.content-wrapper {
+  background-color: $bg-deepdark;
+}
+
 .container {
   max-width: $screen-lg;
   margin: auto;
   padding: 1rem;
 
-  @include mq($screen-xs) {
-    padding: 2rem;
-  }
+  @include mqp($screen-xs, 2rem);
+  @include mqp($screen-md, 3rem);
+  @include mqp($screen-lg, 4rem);
 
-  @include mq($screen-md) {
-    padding: 3rem;
-  }
-
-  @include mq($screen-lg) {
-    padding: 4rem;
-  }
 }
 

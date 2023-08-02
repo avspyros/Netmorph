@@ -1,9 +1,9 @@
-export default function BlockHeader({ title, description }) {
+export default function BlockHeader({ title, description, decor }) {
 
   return (
-    <div className="block-header">
+    <div className={`block-header ${decor ? 'block-header-decor' : ''}`}>
       <h2>{title}</h2>
-      <p>{description}</p>
+      {description && <p>{description}</p>}
     </div>
 
   )

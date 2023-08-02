@@ -15,7 +15,7 @@ export default function Welcome() {
 
           <Button
             text="Learn More"
-            url="https://github.com/avspyros"
+            url="/story"
             btnType="btnLink"
           />
 

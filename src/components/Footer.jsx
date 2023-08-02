@@ -1,11 +1,11 @@
 import Container from './Container'
 
-export default function Footer() {
+export default function Footer({ bgColor }) {
   const currentYear = new Date().getFullYear()
 
   return (
-    <header>
-      <div id="footer" className="footer-wrapper">
+    <footer>
+      <div id="footer" className={`footer-wrapper ${bgColor}`}>
 
         <Container>
 
@@ -14,6 +14,6 @@ export default function Footer() {
         </Container>
 
       </div>
-    </header>
+    </footer>
   )
 }

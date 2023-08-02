@@ -1,27 +1,22 @@
-// import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import { Routes, Route } from 'react-router-dom'
 import './app.scss'
 
-// COMPONENTS
-import Navbar from './components/Navbar'
-import Welcome from './components/Welcome'
-import Profile from './components/Profile'
-import Samples from './components/Samples'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+// PAGES
+import Home from './pages/Home'
+import Story from './pages/Story'
+import Project from './pages/Project'
+import PageNotFound from './pages/PageNotFound'
 
 function App() {
 
   return (
     <div className="app-wrapper">
-      <Navbar />
-      <div className="content-wrapper">
-        <Welcome />
-        <Profile />
-        <Samples />
-        <Contact />
-        <Footer />
-      </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='story' element={<Story />} />
+        <Route path='project' element={<Project />} />
+        <Route path='*' element={<PageNotFound />} />
+      </Routes>
     </div>
   )
 }

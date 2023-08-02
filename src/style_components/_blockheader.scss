@@ -1,0 +1,10 @@
+@use '../style_global' as *;
+
+.block-header {
+  margin-bottom: 2rem;
+}
+
+.block-header-decor {
+  border-bottom: 2px solid;
+  border-image: $border-gradient 1;
+}

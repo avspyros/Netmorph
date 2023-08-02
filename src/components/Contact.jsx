@@ -1,15 +1,37 @@
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../services'
+
+// COMPONENTS
 import Container from './Container'
 import BlockHeader from './BlockHeader'
 import Button from './Button'
-import IconLinkedin from './IconLinkedin'
-import IconGithub from './IconGithub'
+
+// ICONS
+import IconLinkedin from '../icons/IconLinkedin'
+import IconGithub from '../icons/IconGithub'
 
 export default function Contact() {
 
-  const handleSubmit = (e) => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
     e.preventDefault()
-    console.log('form submitted')
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then((result) => {
+        console.log(result.text);
+        console.log('message sent!')
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset()
   }
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   console.log('form submitted')
+  // }
 
   return (
     <div id="contact" className="contact-wrapper">
@@ -23,7 +45,7 @@ export default function Contact() {
 
         <div className="contact-blocks">
 
-          <form className="contact-form" autoComplete='off' onSubmit={handleSubmit}>
+          <form ref={form} className="contact-form" autoComplete='off' onSubmit={sendEmail}>
             <div className="form-row">
               <div className="form-col">
                 <label htmlFor="name">Name</label>

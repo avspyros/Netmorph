@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 
 export default function Button({ text, url, btnType }) {
 
@@ -6,7 +7,7 @@ export default function Button({ text, url, btnType }) {
       {
         btnType === "submit" ?
           <button type="submit" className="btn">{text}</button> :
-          <a href={url} className="btn">{text}</a>
+          <Link to={url} className="btn">{text}</Link>
       }
     </div>
   )

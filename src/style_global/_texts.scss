@@ -60,3 +60,12 @@ input, textarea {
   font-size: 1rem;
   color: $text-secondary;
 }
+
+.generic-content {
+  padding: 1rem;
+
+  h5 {
+    color: $bg-dark;
+    font-size: 1.25rem;
+  }
+}

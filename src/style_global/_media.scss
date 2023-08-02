@@ -14,3 +14,15 @@ $screen-lg: 90rem;
     font-size: $setting;
   }
 }
+
+@mixin mqf($size, $fontsize) {
+  @media (min-width: $size) {
+    font-size: $fontsize;
+  }
+}
+
+@mixin mqp($size, $pad) {
+  @media (min-width: $size) {
+    padding: $pad;
+  }
+}
