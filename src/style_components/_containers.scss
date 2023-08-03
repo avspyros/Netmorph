@@ -18,7 +18,7 @@
 .container {
   max-width: $screen-lg;
   margin: auto;
-  padding: 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
 
   @include mqp($screen-xs, 2rem);
   @include mqp($screen-md, 3rem);

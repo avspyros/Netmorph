@@ -1,12 +1,19 @@
-import Profile from '../components/Profile'
+import ContentWrapper from '../components/ContentWrapper'
+import PageNav from '../components/PageNav'
+import Article from '../components/Article'
 import Footer from '../components/Footer'
 
 export default function Project() {
 
   return (
-    <div className="content-wrapper">
-      <Profile />
-      <Footer />
-    </div>
+    <ContentWrapper>
+      <PageNav />
+      <Article
+        title="Project 1 Title"
+        imgPath="https://placehold.co/1600x800"
+        alt="Project 1 Title"
+      />
+      <Footer bgColor='footer-darkest' />
+    </ContentWrapper>
   )
 }
