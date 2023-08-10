@@ -10,6 +10,7 @@ import Button from './Button'
 // ICONS
 import IconLinkedin from '../icons/IconLinkedin'
 import IconGithub from '../icons/IconGithub'
+import IconNetlify from '../icons/IconNetlify'
 
 export default function Contact() {
 
@@ -93,6 +94,7 @@ export default function Contact() {
               <div className="social-group">
                 <IconLinkedin url="https://www.linkedin.com/in/avspyros/" />
                 <IconGithub url="https://github.com/avspyros" />
+                <IconNetlify url="https://netlify.com/avspyros" />
               </div>
             </div>
           </div>
