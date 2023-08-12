@@ -11,7 +11,6 @@ export default function Project() {
       <Article
         title="Project 1 Title"
         imgPath="https://placehold.co/1600x800"
-        alt="Project 1 Title"
       />
       <Footer bgColor='footer-darkest' />
     </ContentWrapper>

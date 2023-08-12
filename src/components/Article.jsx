@@ -1,6 +1,6 @@
 import Container from './Container'
 
-export default function Article({ title, imgPath, alt }) {
+export default function Article({ title, imgPath }) {
 
   const paragraphData = [
     {
@@ -25,7 +25,7 @@ export default function Article({ title, imgPath, alt }) {
         </div>
         {imgPath &&
           <div className="article-img">
-            <img src={imgPath} alt={alt} />
+            <img src={imgPath} />
           </div>}
         <div className="article-text">
           {paragraphData.map(paragraph => (
