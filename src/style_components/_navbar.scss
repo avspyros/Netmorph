@@ -70,12 +70,13 @@
     }
   }
 
-  a {
+  .nav-link {
     display: block;
     position: relative;
     letter-spacing: 0.1em;
     transition: color 0.3s ease;
     font-size: 0.8rem;
+    cursor: pointer;
   
     &:hover {
       color: $bg-neutral;
@@ -111,7 +112,7 @@
     }
   }
 
-  a.active {
+  .nav-link.active {
     color: $text-primary;
 
     &::after {

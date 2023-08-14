@@ -1,3 +1,4 @@
+
 // COMPONENTS
 import Navbar from '../components/Navbar'
 import ContentWrapper from '../components/ContentWrapper'

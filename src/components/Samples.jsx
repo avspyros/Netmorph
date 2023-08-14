@@ -21,4 +21,3 @@ export default function Samples() {
 }
 
 
-// id, title, shortDescription, previewImg, url, blockBg

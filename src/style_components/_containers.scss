@@ -16,6 +16,7 @@
 }
 
 .container {
+  z-index: 2;
   max-width: $screen-lg;
   margin: auto;
   padding: 1.5rem 1rem 1rem 1rem;

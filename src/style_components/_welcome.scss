@@ -1,14 +1,69 @@
 @use '../style_global' as *;
 
 .header-wrapper {
-  background-color: $bg-dark;
   position: relative;
   min-height: calc(100vh - 6em);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: $bg-dark;
 
   @include mq($screen-md) {
     height: 100vh;
   }
+
+  .section-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transform: scale(1);
+    transform-origin: bottom right;
+    background: $bg-dark url('./assets/fxbg.svg') no-repeat top right;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: slowlyAppear 2s ease-in;
+  }
+
+  @keyframes slowlyAppear {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  p {
+
+    @include mq($screen-lg) {
+      max-width: 80%;
+    }
+
+    animation: slideIn 2s ease-in;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(15%); 
+      opacity: 0;   
+    }
+    
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 }
+
+
+

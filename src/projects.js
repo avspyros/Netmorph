@@ -1,9 +1,11 @@
+import textswitcher from './assets/text-switcher.png'
+
 const projects = [
   {
     id: 1,
     title: "Sample Project 1",
     shortDescription: "A simple tool for converting text, made with React.",
-    previewImg: "https://fakeimg.pl/600x600",
+    previewImg: textswitcher,
     articleImg: "https://placehold.co/1600x800",
     url: "/Project",
     blockBg: "bg-neutral",

@@ -10,10 +10,12 @@
     position: relative;
     min-height: 25em;
     width: 100%;
-    background-position: center;
+    background-color: $bg-neutral;
+    background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
+    
     a {
       display: block;
       height: 100%;
@@ -23,6 +25,13 @@
       left: 0;
       bottom: 0;
       right: 0;
+      backdrop-filter: brightness(0.6);
+      transition: 0.5s backdrop-filter ease-in-out;
+      transition-delay: 250ms;
+           
+      &:hover {
+        backdrop-filter: brightness(1);
+      }
     }
 
     @include mq($screen-sm) {

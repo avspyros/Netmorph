@@ -1,0 +1,49 @@
+@use '../style_global' as *;
+
+.accordion {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: $bg-neutral;
+
+  &:hover {
+    background-color: $bg-neutral-accent-1;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    margin: 0;
+
+    @include mqf($screen-sm, 1.25rem);
+  }
+
+  span {
+    color: $text-primary;
+    font-size: 1.75rem;
+  }
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  background-color: $bg-neutral-accent-2;
+
+  p {
+    font-size: 0.9rem;
+
+    @include mqf($screen-sm, 1rem);
+  }
+
+  
+}
+

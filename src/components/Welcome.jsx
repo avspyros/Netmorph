@@ -6,11 +6,12 @@ export default function Welcome() {
   return (
     <header>
       <div id="welcome" className="header-wrapper">
-
+        <div className="section-bg"></div>
         <Container>
-
-          <h1>Main Title</h1>
-          <p className='description'>Qui tenetur amet nisi, voluptate totam voluptates possimus tempora assumenda vitae quas in earum voluptas ad maiores esse laboriosam ipsum. Deserunt eum nihil doloribus, nobis dolores quis nostrum quibusdam dolorum.
+          <h1>Spyros Avgoustatos</h1>
+          <p className='description'>Flexible UI crafter with diverse experience in front-end development aiming to expand his knowledge across the
+            vast spectrum of web technologies and to become more versatile by collaborating with team members to
+            produce exciting projects for the modern day web.
           </p>
 
           <Button
@@ -18,7 +19,6 @@ export default function Welcome() {
             url="/story"
             btnType="btnLink"
           />
-
         </Container>
 
       </div>

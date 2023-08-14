@@ -3,34 +3,31 @@ import { useState } from 'react'
 
 export default function Navbar() {
 
-  const navLinks = [
-    { id: 1, href: "#welcome", txt: "welcome", isActive: false },
-    { id: 2, href: "#profile", txt: "profile", isActive: false },
-    { id: 3, href: "#samples", txt: "samples", isActive: false },
-    { id: 4, href: "#contact", txt: "get in touch", isActive: false }
+  const navItems = [
+    { id: 1, title: 'welcome', href: "#welcome" },
+    { id: 2, title: 'profile', href: "#profile" },
+    { id: 3, title: 'samples', href: "#samples" },
+    { id: 4, title: 'get in touch', href: "#contact" }
   ]
 
-  const [activeLink, setActiveLink] = useState()
+  const [navigation, setNavigation] = useState(navItems)
+  const [activeSection, setActiveSection] = useState(navItems[0])
 
   return (
     <div className="nav-wrapper" id="sidebar">
       <div className="nav-inner">
         <nav>
           <ul>
-            {
-              navLinks.map(navLink => {
-                return (
-                  <li key={navLink.id}>
-                    <AnchorLink
-                      href={navLink.href}
-                      className={`nav-link ${activeLink === navLink.id ? "active" : ""}`}
-                      onClick={() => setActiveLink(navLink.id)}>
-                      {navLink.txt}
-                    </AnchorLink>
-                  </li>
-                )
-              })
-            }
+            {navigation.map(navItem => (
+              <li key={navItem.id}>
+                <AnchorLink
+                  href={navItem.href}
+                  className={`nav-link ${navItem === activeSection ? "active" : ""}`}
+                  onClick={() => setActiveSection(navItem)}>
+                  {navItem.title}
+                </AnchorLink>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
