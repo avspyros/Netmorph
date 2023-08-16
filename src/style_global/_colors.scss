@@ -3,17 +3,18 @@ $bg-darker: #473582;
 $bg-deepdark: #302550;
 $bg-darkest: #251D3E;
 
-
 $bg-neutral: #5155B4;
 $bg-neutral-accent-1: #4D51AB;
 $bg-neutral-accent-2: #494CA2;
 
-$bg-light: #AF4C91;
+// rgba(179, 85, 151, 0.32)
+$bg-light: rgba(179, 85, 151, 0.6);
+// $bg-light: #AF4C91;
 $bg-lighter: #B35597;
 $bg-transparent: rgba(255, 255, 255, 0.05);
 
 $border-color: rgba(255, 255, 255, 0.15);
-$border-gradient: linear-gradient(to right, #5e42a6, #b74e91);
+$border-gradient: linear-gradient(to right, #5e42a6, #AF4C91);
 $btn-hover: rgba(255, 255, 255, 0.1);
 
 $text-primary: #ffffff;

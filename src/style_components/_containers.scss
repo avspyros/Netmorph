@@ -13,6 +13,9 @@
 
 .content-wrapper {
   background-color: $bg-deepdark;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {

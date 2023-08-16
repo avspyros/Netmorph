@@ -3,13 +3,27 @@ import textswitcher from './assets/text-switcher.png'
 const projects = [
   {
     id: 1,
-    title: "Sample Project 1",
+    title: "Text Switcher",
     shortDescription: "A simple tool for converting text, made with React.",
     previewImg: textswitcher,
     articleImg: "https://placehold.co/1600x800",
     url: "/Project",
+    externalUrl: "https://text-switcher.netlify.app/",
     blockBg: "bg-neutral",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nisi quo sed illum magnam repudiandae."
+    description: [
+      {
+        id: 'par1',
+        text: 'Voluptatibus molestias fuga modi non sed dicta ut, dolore a commodi consequatur pariatur temporibus amet dolorem, libero laborum vel animi itaque quod iusto. Maiores eum id quae sint! Mollitia, est.'
+      },
+      {
+        id: 'par2',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatum minus, doloribus est deserunt id numquam enim mollitia animi impedit, reprehenderit sapiente tempora consectetur nobis fuga distinctio veniam aspernatur delectus!'
+      },
+      {
+        id: 'par3',
+        text: 'Libero laborum vel animi itaque quod iusto. Maiores eum id quae sint! Mollitia, est.'
+      }
+    ]
   },
   {
     id: 2,

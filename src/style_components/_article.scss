@@ -1,17 +1,73 @@
 @use '../style_global' as *;
 
+.article-wrapper {
+
 .article-header {
   border-bottom: 2px solid;
   border-image: $border-gradient 1;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.inner { 
+  margin-bottom: 3rem;
+
+  @include mq($screen-md) {
+    display: flex;
+  }
 }
 
 .article-img {
-  margin: 0 auto 1rem auto;
+  // border: 1px solid red;
+  min-height: 16em;
+  margin: 0 auto 2rem auto;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  img {
-    margin: auto;
-    width: 100%;
-    height: auto;
+  @include mq($screen-xs) {  
+    min-height: 18em;
+    max-width: 32em;
   }
+  
+  @include mq($screen-sm) { 
+    min-height: 24em;
+    max-width: 75%;
+  }
+
+  @include mq($screen-md) { 
+    min-height: 22em;
+    width: 40%;
+  }
+
+  @include mq($screen-lg) { 
+    min-height: 24em;
+    flex: 1
+  }
+}
+
+.article-text {
+  
+  @include mq($screen-md) {
+    padding: 1rem;
+    flex: 2; 
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .article-url {
+    margin-top: 2rem;
+  }
+
+}
+
+.article-url {
+  margin-bottom: 2rem;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
 }

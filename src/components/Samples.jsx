@@ -1,6 +1,4 @@
 import projects from '../projects'
-
-// COMPONENTS
 import SampleBlock from './SampleBlock'
 
 export default function Samples() {
