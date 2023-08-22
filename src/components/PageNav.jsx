@@ -9,11 +9,11 @@ export default function PageNav() {
     setOpen(!open)
   }
 
-  const projectLinks = [
-    { id: 1, linkTo: "project1", txt: "Project 1" },
-    { id: 2, linkTo: "project2", txt: "Project 2" },
-    { id: 3, linkTo: "project3", txt: "Project 3" }
-  ]
+  // const projectLinks = [
+  //   { id: 1, slug: 1, txt: "Project One" },
+  //   { id: 2, slug: 2, txt: "Project Two" },
+  //   { id: 3, slug: 3, txt: "Project Three" }
+  // ]
 
   return (
     <div className="pagenav-wrapper" id="pagenav">
@@ -30,15 +30,24 @@ export default function PageNav() {
               </button>
               {open ? (
                 <ul className="dropdown-menu">
-                  {
+                  <li>
+                    <NavLink to="/project/1">Project One</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/project/2">Project Two</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/project/3">Project Three</NavLink>
+                  </li>
+                  {/* {
                     projectLinks.map(projectLink => {
                       return (
                         <li key={projectLink.id}>
-                          <NavLink to='/Project'>{projectLink.txt}</NavLink>
+                          <NavLink to={`/project/${projectLink.slug}`}>{projectLink.txt}</NavLink>
                         </li>
                       )
                     })
-                  }
+                  } */}
                 </ul>
               ) : null}
             </div>
