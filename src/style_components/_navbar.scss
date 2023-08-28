@@ -14,7 +14,12 @@
   overflow: hidden;
   z-index: 10000;
 
+  @include mq($screen-xs) {
+    height: 4rem;
+  }
+
   @include mq($screen-md) {
+    position: fixed;
     text-align: right;
     height: 100vh;
     width: 18em;

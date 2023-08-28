@@ -14,13 +14,14 @@ h1, h2, h3 {
 
 h1 {
   font-size: 2rem;
+  margin-bottom: 2rem;
 
   @include mqs($screen-lg, 3rem);
 }
 
 h2 {
   font-size: 1.75rem;
-
+  
   @include mqs($screen-lg, 2.25rem);
 }
 

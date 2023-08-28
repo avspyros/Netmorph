@@ -1,13 +1,14 @@
 import textswitcher from './assets/text-switcher.png'
+import myhabeats from './assets/myhabeats.png'
+import gamesboard from './assets/gamesboard.png'
 
 const projects = [
   {
     id: 1,
+    slug: "1",
     title: "Text Switcher",
     shortDescription: "A simple tool for converting text, made with React.",
     previewImg: textswitcher,
-    articleImg: "https://placehold.co/1600x800",
-    slug: "1",
     externalUrl: "https://text-switcher.netlify.app/",
     blockBg: "bg-neutral",
     description: [
@@ -27,13 +28,11 @@ const projects = [
   },
   {
     id: 2,
-    title: "Sample Project 2",
-    shortDescription: "A simple tool for converting text, made with React.",
-    previewImg: "https://fakeimg.pl/600x600",
-    articleImg: "https://placehold.co/1600x800",
     slug: "2",
-    externalUrl: "https://text-switcher.netlify.app/",
-    previewImg: "https://fakeimg.pl/600x600",
+    title: "Gamesboard",
+    shortDescription: "A multifunctional platform for boardgames",
+    previewImg: gamesboard, 
+    externalUrl: "https://gamesboard.gr",
     blockBg: "bg-neutral-deep",
     description: [
       {
@@ -52,12 +51,11 @@ const projects = [
   },
   {
     id: 3,
-    title: "Sample Project 3",
-    shortDescription: "Odio nisi quo sed illum magnam repudiandae, eius suscipit quisquam dolores incidunt sapiente sequi ducimus.",
-    previewImg: "https://fakeimg.pl/600x600",
-    articleImg: "https://placehold.co/1600x800",
-    slug: "3", 
-    externalUrl: "https://text-switcher.netlify.app/",
+    slug: "3",
+    title: "Myhabeats",
+    shortDescription: "Official website of a behavioral vaccine app",
+    previewImg: myhabeats, 
+    externalUrl: "https://myhabeats.com/",
     blockBg: "bg-neutral-deeper",
     description: [
       {

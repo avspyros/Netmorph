@@ -3,7 +3,7 @@
 .nav-wrapper + .content-wrapper {
   min-height: 100vh;
   margin-left: 0;
-  padding-top: 6rem;
+  // padding-top: 6rem;
   
   @include mq($screen-md) {
     margin-left: 18rem;
@@ -35,3 +35,19 @@
   margin-top: 1rem;
 }
 
+
+// #welcome.scrolled-to, 
+// #profile.scrolled-to, 
+// #samples.scrolled-to, 
+// #contact.scrolled-to {
+//   padding-top: 4rem; 
+// }
+
+// @include mq($screen-md) {
+//   #welcome.scrolled-to, 
+//   #profile.scrolled-to, 
+//   #samples.scrolled-to, 
+//   #contact.scrolled-to {
+//     padding-top: initial; 
+//   }
+// }

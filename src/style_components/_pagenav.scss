@@ -11,13 +11,18 @@
   padding: 1rem 0.5rem;
   @include mqp($screen-xs, 1.5rem 1rem);
   @include mqp($screen-sm, 2rem 1.5rem);
-  @include mqp($screen-md, 2.5rem 2rem);
+  @include mqp($screen-md, 2.5rem 3rem);
+
+  $menu-item-xs: 0.75rem; 
+  $menu-item-sm: 0.85rem; 
+  $menu-item-md: 1rem; 
+  $menu-item-lg: 1.25rem;
+  $menu-item-xl: 1.5rem;
 
   nav {
-    color: $text-secondary;
     text-align: center;
     width: 100%;
-  
+
     @include mq($screen-xs) {
       display: flex;
       align-items: center;
@@ -25,24 +30,35 @@
       > div  {
         flex: 1;
       }
+    }
+
+    .logo {
+      margin-bottom: 1rem;
+
+      a {
+        font-size: $menu-item-lg;
   
-      .logo {
+        @include mqf($screen-xs, $menu-item-lg);
+        @include mqf($screen-sm, $menu-item-xl);
+        @include mqf($screen-md, calc($menu-item-xl + 0.25rem));
+      }
+
+      @include mq($screen-xs) {
         text-align: left;
-
-        a{
-          font-size: 1.75rem;
-        }
-      }
-  
-      .nav-items {
-        text-align: right;
-      }
-
-      .active {
-        color: $bg-deepdark;
+        margin-bottom: 0;
       }
     }
-  
+
+    .nav-items {
+      .active {
+        color: $bg-deepdark;    
+      }
+
+      @include mq($screen-xs) {
+        text-align: right;
+      }    
+    }
+
     .dropdown-container {
       position: relative;
       display: inline-block;
@@ -60,7 +76,6 @@
       }
     }
   
-  
     a, button.dropdown {
       background-color: transparent;
       color: $text-secondary;
@@ -70,7 +85,7 @@
       border-radius: 0;
       cursor: pointer;
   
-      &:hover{
+      &:hover {
         color: $text-primary;
       }
   
@@ -97,6 +112,14 @@
         @include mqp($screen-xs, 0 0 0.5rem 0);
         @include mqp($screen-sm, 0 0 0.75rem 0);
         @include mqp($screen-md, 0 0 0.85rem 0);
+      }
+
+      a {
+        font-size: $menu-item-xs;
+        @include mqf($screen-xs, $menu-item-xs);
+        @include mqf($screen-sm, $menu-item-sm);
+        @include mqf($screen-md, $menu-item-md);
+
       }
     }
   

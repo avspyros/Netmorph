@@ -1,4 +1,4 @@
-// COMPONENTS
+import skillsAndTech from '../skillsAndTech'
 import Container from './Container'
 import BlockHeader from './BlockHeader'
 import ProfileBlock from './ProfileBlock'
@@ -8,51 +8,20 @@ export default function Profile() {
   return (
 
     <div id="profile" className="profile-wrapper">
-
       <Container>
-
         <BlockHeader
-          title="Profile Section"
-          description="Aut, eos quasi esse ad saepe tempora beatae sapiente incidunt ipsam amet"
+          title="Profile"
+          description="Over the years, either through self research and experimentation or by working hands on  on real products, I have acquired some expertise or familiarity with the following:"
         />
-
         <div className="profile-box-wrapper">
-          <ProfileBlock
-            title="1st Feature Title"
-            description="Feature description text"
-          />
-          <ProfileBlock
-            title="2nd Feature Title"
-            description="Feature description text 2"
-          />
-          <ProfileBlock
-            title="3rd Feature Title"
-            description="Feature description text 3"
-          />
-          <ProfileBlock
-            title="4th Feature Title"
-            description="Feature description text 4"
-          />
-          <ProfileBlock
-            title="5th Feature Title"
-            description="Feature description text 5"
-          />
-          <ProfileBlock
-            title="6th Feature Title"
-            description="Feature description text 6"
-          />
-          <ProfileBlock
-            title="7thFeature Title"
-            description="Feature description text 7"
-          />
-          <ProfileBlock
-            title="8th Feature Title"
-            description="Feature description text 8"
-          />
+          {skillsAndTech.map(block => (
+            <ProfileBlock key={block.id}
+              title={block.title}
+              description={block.description}
+            />
+          ))}
         </div>
-
       </Container>
-
     </div>
 
   )
