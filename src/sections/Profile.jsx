@@ -1,12 +1,10 @@
 import skillsAndTech from '../skillsAndTech'
-import Container from './Container'
-import BlockHeader from './BlockHeader'
-import ProfileBlock from './ProfileBlock'
+import Container from '../components/Container'
+import BlockHeader from '../components/BlockHeader'
+import ProfileBlock from '../components/ProfileBlock'
 
 export default function Profile() {
-
   return (
-
     <div id="profile" className="profile-wrapper">
       <Container>
         <BlockHeader
@@ -23,6 +21,5 @@ export default function Profile() {
         </div>
       </Container>
     </div>
-
   )
 }

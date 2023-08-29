@@ -1,12 +1,12 @@
-
-// COMPONENTS
-import Navbar from '../components/Navbar'
 import ContentWrapper from '../components/ContentWrapper'
-import Welcome from '../components/Welcome'
-import Profile from '../components/Profile'
-import Samples from '../components/Samples'
-import Contact from '../components/Contact'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+
+import Welcome from '../sections/Welcome'
+import Profile from '../sections/Profile'
+import Samples from '../sections/Samples'
+import Contact from '../sections/Contact'
+
 
 export default function Home() {
 

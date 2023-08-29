@@ -2,7 +2,8 @@
 
 .header-wrapper {
   position: relative;
-  min-height: calc(100vh - 6em);
+  // min-height: calc(100vh - 6em);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,13 +44,11 @@
   }
 
   p {
-
     @include mq($screen-lg) {
       max-width: 80%;
     }
 
     animation: slideIn 2s ease-in;
-    // animation-delay: 500ms;
   }
 
   @keyframes slideIn {

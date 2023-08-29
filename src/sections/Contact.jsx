@@ -1,18 +1,15 @@
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../services'
-
-// COMPONENTS
-import Container from './Container'
-import BlockHeader from './BlockHeader'
-import Button from './Button'
-
-// ICONS
+import Container from '../components/Container'
+import BlockHeader from '../components/BlockHeader'
+import Button from '../components/Button'
 import IconLinkedin from '../icons/IconLinkedin'
 import IconGithub from '../icons/IconGithub'
-import IconNetlify from '../icons/IconNetlify'
 
 export default function Contact() {
+
+  const [message, setMessage] = useState(null)
 
   const form = useRef()
 
@@ -21,31 +18,23 @@ export default function Contact() {
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
-        console.log(result.text);
-        console.log('message sent!')
+        console.log(result.text)
+        setMessage("Success!")
       }, (error) => {
-        console.log(error.text);
-      });
+        console.log(error.text)
+        setMessage("Something went wrong!")
+      })
     e.target.reset()
   }
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   console.log('form submitted')
-  // }
-
   return (
     <div id="contact" className="contact-wrapper">
-
       <Container>
-
         <BlockHeader
           title="Get in touch"
           description="Use the following to contact me"
         />
-
         <div className="contact-blocks">
-
           <form ref={form} className="contact-form" autoComplete='off' onSubmit={sendEmail}>
             <div className="form-row">
               <div className="form-col">
@@ -70,7 +59,11 @@ export default function Contact() {
                   btnType="submit"
                 />
               </div>
+              <div className="form-col">
+                {message && <p className="form-msg">{message}</p>}
+              </div>
             </div>
+
           </form>
 
           <div className="contact-info">
@@ -90,18 +83,14 @@ export default function Contact() {
             </div>
             <div>
               <h3>Social</h3>
-
               <div className="social-group">
                 <IconLinkedin url="https://www.linkedin.com/in/avspyros/" />
                 <IconGithub url="https://github.com/avspyros" />
-                <IconNetlify url="https://netlify.com/avspyros" />
               </div>
             </div>
           </div>
         </div>
-
       </Container>
-
     </div>
   )
 }

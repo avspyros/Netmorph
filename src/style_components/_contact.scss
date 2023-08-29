@@ -41,7 +41,8 @@
     margin-bottom: 2rem;
   }
 
-  .form-row:nth-child(1) {
+  .form-row:nth-child(1), 
+  .form-row:last-child {
     @include mq($screen-sm) {
       display: flex;
       justify-content: space-between;
@@ -60,6 +61,10 @@
 
   .form-row:last-child {
     margin-top: 2rem;
+
+    .form-col:nth-child(2){
+      text-align: right;
+    }
   }
 }
 
@@ -111,4 +116,9 @@
     }
   }
 
+}
+
+.form-msg {
+  font-size: 1rem;
+  font-style: italic;
 }

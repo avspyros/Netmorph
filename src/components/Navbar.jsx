@@ -13,8 +13,6 @@ export default function Navbar() {
   const [navigation, setNavigation] = useState(navItems)
   const [activeSection, setActiveSection] = useState(navItems[0])
 
-  console.log(activeSection);
-
   return (
     <div className="nav-wrapper" id="sidebar">
       <div className="nav-inner">

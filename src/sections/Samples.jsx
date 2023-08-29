@@ -1,5 +1,5 @@
 import projects from '../projects'
-import SampleBlock from './SampleBlock'
+import SampleBlock from '../components/SampleBlock'
 
 export default function Samples() {
   return (
@@ -17,5 +17,3 @@ export default function Samples() {
     </div>
   )
 }
-
-
