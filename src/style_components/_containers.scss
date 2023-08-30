@@ -1,10 +1,10 @@
 @use '../style_global' as *;
 
-.nav-wrapper + .content-wrapper {
+.nav-wrapper+.content-wrapper {
   min-height: 100vh;
   margin-left: 0;
   // padding-top: 6rem;
-  
+
   @include mq($screen-md) {
     margin-left: 18rem;
     padding-top: 0;
@@ -14,6 +14,7 @@
 .content-wrapper {
   background-color: $bg-deepdark;
   min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -21,6 +22,7 @@
 .container {
   z-index: 2;
   max-width: $screen-lg;
+  width: 100%;
   margin: auto;
   padding: 1.5rem 1rem 1rem 1rem;
 
@@ -30,8 +32,7 @@
 
 }
 
-.generic-content + .btn-container {
+.generic-content+.btn-container {
   text-align: center;
   margin-top: 1rem;
 }
-
