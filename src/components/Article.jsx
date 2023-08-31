@@ -8,7 +8,7 @@ export default function Article({ title, img, url, description }) {
         <div className="article-header">
           <h2>{title}</h2>
         </div>
-        <div className="inner">
+        <div className="article-container">
           <div className="article-img">
             <img src={img} alt={title} />
           </div>

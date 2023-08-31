@@ -1,0 +1,44 @@
+@use '../style_global' as *;
+
+.infoblocks {
+  margin-bottom: 4rem;
+
+  @include mq($screen-sm) {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .infoblock:nth-child(1) {
+    padding: 1rem;
+
+    p {
+      color: $text-primary;
+    }
+
+    @include mq($screen-sm) {
+      background-color: $bg-neutral;
+      padding: 2rem;
+      flex: 3;
+    }
+  }
+
+  .infoblock:nth-child(2) {
+    margin: auto;
+    height: 250px;
+    width: 250px;
+
+    @include mq($screen-xs) {
+      height: 300px;
+      width: 300px;
+    }
+
+    .avatar {
+      height: 100%;
+      width: 100%;
+      background-image: url('https://placehold.co/300');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

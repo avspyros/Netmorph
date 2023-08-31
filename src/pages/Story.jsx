@@ -1,5 +1,6 @@
 import ContentWrapper from '../components/ContentWrapper'
 import Container from '../components/Container'
+import BlockHeader from '../components/BlockHeader'
 import Accordion from '../components/Accordion'
 import PageNav from '../components/PageNav'
 import Footer from '../components/Footer'
@@ -12,6 +13,7 @@ export default function Story() {
       <PageNav />
       <Container>
         <InfoBlocks />
+        <BlockHeader title="My web development journey" />
         <Accordion />
       </Container>
       <Footer bgColor='footer-darkest' />

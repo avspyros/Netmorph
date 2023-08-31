@@ -13,9 +13,9 @@
   @include mqp($screen-sm, 2rem 1.5rem);
   @include mqp($screen-md, 2.5rem 3rem);
 
-  $menu-item-xs: 0.75rem; 
-  $menu-item-sm: 0.85rem; 
-  $menu-item-md: 1rem; 
+  $menu-item-xs: 0.75rem;
+  $menu-item-sm: 0.85rem;
+  $menu-item-md: 1rem;
   $menu-item-lg: 1.25rem;
   $menu-item-xl: 1.5rem;
 
@@ -26,8 +26,8 @@
     @include mq($screen-xs) {
       display: flex;
       align-items: center;
-  
-      > div  {
+
+      >div {
         flex: 1;
       }
     }
@@ -37,7 +37,7 @@
 
       a {
         font-size: $menu-item-lg;
-  
+
         @include mqf($screen-xs, $menu-item-lg);
         @include mqf($screen-sm, $menu-item-xl);
         @include mqf($screen-md, calc($menu-item-xl + 0.25rem));
@@ -51,32 +51,34 @@
 
     .nav-items {
       .active {
-        color: $bg-deepdark;    
+        color: $bg-deepdark;
       }
 
       @include mq($screen-xs) {
         text-align: right;
-      }    
+      }
     }
 
     .dropdown-container {
       position: relative;
       display: inline-block;
-  
+      z-index: 3;
+
       button.dropdown {
         position: relative;
       }
-  
+
       span {
-        font-size: 1rem;   
+        font-size: 1rem;
         position: absolute;
         bottom: 30%;
         right: 2px;
         display: inline-block;
       }
     }
-  
-    a, button.dropdown {
+
+    a,
+    button.dropdown {
       background-color: transparent;
       color: $text-secondary;
       font-size: 0.9rem;
@@ -84,15 +86,15 @@
       border: 0;
       border-radius: 0;
       cursor: pointer;
-  
+
       &:hover {
         color: $text-primary;
       }
-  
+
       @include mqf($screen-xs, 1rem);
       @include mqf($screen-sm, 1.25rem);
     }
-  
+
     .dropdown-menu {
       background-color: $bg-dark;
       list-style-type: none;
@@ -100,14 +102,14 @@
       display: block;
       position: absolute;
       top: 2rem;
-      right: 0;   
+      right: 0;
       display: flex;
       flex-direction: column;
-  
+
       @include mq($screen-md) {
         top: 2.5rem;
       }
-  
+
       li {
         @include mqp($screen-xs, 0 0 0.5rem 0);
         @include mqp($screen-sm, 0 0 0.75rem 0);
@@ -122,12 +124,6 @@
 
       }
     }
-  
+
   }
 }
-
-
-
-
-
-

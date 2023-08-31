@@ -13,7 +13,7 @@
     }
   }
 
-  .inner {
+  .article-container {
     margin-bottom: 3rem;
 
     @include mq($screen-sm) {
@@ -26,7 +26,12 @@
     width: 100%;
 
     @include mq($screen-sm) {
+      flex: 1;
       margin-bottom: 0;
+    }
+
+    @include mq($screen-md) {
+      flex: 2;
     }
   }
 
@@ -34,7 +39,12 @@
     width: 100%;
 
     @include mq($screen-sm) {
+      flex: 1;
       padding: 0 1rem;
+    }
+
+    @include mq($screen-md) {
+      flex: 3;
     }
 
     @include mq($screen-lg) {
