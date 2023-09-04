@@ -9,7 +9,7 @@ export default function Profile() {
       <Container>
         <BlockHeader
           title="Profile"
-          description="Over the years, either through self research and experimentation or by working hands on  on real products, I have acquired some expertise or familiarity with the following:"
+          description="Over the years, either through self research and experimentation or by working hands on  on real products, Spyros has acquired some expertise or familiarity with the following:"
         />
         <div className="profile-box-wrapper">
           {skillsAndTech.map(block => (

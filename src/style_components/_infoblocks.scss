@@ -1,7 +1,7 @@
 @use '../style_global' as *;
 
 .infoblocks {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 
   @include mq($screen-sm) {
     display: flex;
@@ -16,8 +16,9 @@
     }
 
     @include mq($screen-sm) {
+      display: flex;
       background-color: $bg-neutral;
-      padding: 2rem;
+      padding: 2rem 0;
       flex: 3;
     }
   }
@@ -35,10 +36,35 @@
     .avatar {
       height: 100%;
       width: 100%;
-      background-image: url('https://placehold.co/300');
+      background-image: url('./assets/portfolio-avatar.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
+  }
+
+  .infoblock-inner {
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+  }
+
+  .infoblock-inner:nth-child(1) {
+    @include mq($screen-sm) {
+      text-align: right;
+    }
+  }
+
+  .infoblock-inner:nth-child(3) {
+    @include mq($screen-sm) {
+      text-align: left;
+    }
+  }
+
+  .vertical-divider {
+    // background: linear-gradient(to top, #5e42a6, #AF4C91);
+    background: $border-color;
+    width: 2px;
+    height: 100%;
   }
 }

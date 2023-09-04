@@ -12,8 +12,9 @@ export default function Story() {
     <ContentWrapper>
       <PageNav />
       <Container>
+        <BlockHeader title="General Info" decor={true} />
         <InfoBlocks />
-        <BlockHeader title="My web development journey" />
+        <BlockHeader title="My web development journey" decor={true} />
         <Accordion />
       </Container>
       <Footer bgColor='footer-darkest' />

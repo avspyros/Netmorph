@@ -20,7 +20,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+
+  @include mqs($screen-md, 2rem);
   
   @include mqs($screen-lg, 2.25rem);
 }
@@ -33,6 +35,7 @@ h3 {
 
 p {
   font-size: 1rem;
+  font-weight: 200;
   color: $text-secondary;
   line-height: 1.5;
   margin-bottom: 1rem;

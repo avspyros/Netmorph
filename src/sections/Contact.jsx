@@ -19,7 +19,7 @@ export default function Contact() {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
         console.log(result.text)
-        setMessage("Success!")
+        setMessage("Message sent")
       }, (error) => {
         console.log(error.text)
         setMessage("Something went wrong!")
