@@ -24,7 +24,7 @@
   max-width: $screen-lg;
   width: 100%;
   margin: auto;
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 2rem 1rem;
 
   @include mqp($screen-xs, 2rem);
   @include mqp($screen-md, 3rem);

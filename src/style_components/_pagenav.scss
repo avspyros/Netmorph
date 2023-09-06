@@ -36,6 +36,12 @@
       margin-bottom: 1rem;
 
       a {
+        // color: $bg-lighter;
+        background: linear-gradient(to right, #d4c1d1, #ca4fa5);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
         font-size: $menu-item-lg;
 
         @include mqf($screen-xs, $menu-item-lg);

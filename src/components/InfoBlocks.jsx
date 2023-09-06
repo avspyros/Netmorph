@@ -6,14 +6,14 @@ export default function InfoBlocks() {
         <div className="infoblock">
           <div className="infoblock-inner">
             <p>Spyros Avgoustatos</p>
-            <p>Residence: Athens, Greece</p>
-            <p>Currently employed @ 47 Purity Street</p>
+            <p><span className="info-variant-txt">Residence:</span> Athens, Greece</p>
+            <p><span className="info-variant-txt">Currently employed @</span> 47 Purity Street</p>
           </div>
           <div className="vertical-divider"></div>
           <div className="infoblock-inner">
-            <p>Born in Athens, 1982</p>
-            <p>Studied @ Serres Technological Educational Institute</p>
-            <p>B. Sc. Geoinformatics & Surveying (2001 - 2006)</p>
+            <p><span className="info-variant-txt">Born:</span> Athens, 1982</p>
+            <p><span className="info-variant-txt">Studied @</span> Serres Technological Educational Institute</p>
+            <p>B. Sc. Geoinformatics & Surveying <span className="info-variant-txt">(2001 - 2006)</span></p>
           </div>
         </div>
         <div className="infoblock">
