@@ -17,13 +17,12 @@ const skillsAndTech = [
   {
     id: 4,
     title: "Achievements",
-    description: "Banner Ads, Landing Pages, Email Development for the local market of International companies, Custom and WordPress websites for local customers, mini web apps as a means of learning and experimentation."
+    description: "Banner Ads, Landing Pages, Email Development for the local market of international brands, custom and WordPress websites for small and medium clients, mini web apps as a means of learning and experimentation."
   },
   {
     id: 5,
-    title: "Engineering",
     title: "Design",
-    description: "Firm understanding of user-centered design principles to create responsive interfaces that are intuitive, user-friendly, and accessible."
+    description: "Firm understanding of user-centered design principles to create responsive interfaces that are intuitive, user-friendly and accessible."
   },
   {
     id: 6,
@@ -33,7 +32,7 @@ const skillsAndTech = [
   {
     id: 7,
     title: "Project Management",
-    description: "Organizing, planning and managing the development process by setting priorities, coordinating with team member, updating stakeholders, trying to communicate ideas clearly for non tech associates or customers and with a clear target to meet deadlines."
+    description: "Organizing, planning and managing the development process by setting priorities, coordinating with team members, briefing stakeholders, trying to communicate ideas clearly for non tech associates or clients and with a clear target to meet deadlines."
   },
   {
     id: 8,

@@ -12,7 +12,7 @@ const projects = [
     description: [
       {
         id: 'par1',
-        text: 'Some of the usual tasks in my work include creating url slugs for articles and other content to be posted on a CMS and renaming of files in a specific way. To make my life and that of my team members easier, I decided to create a mini tool that offers some options to convert text.'
+        text: 'Some of the usual tasks in my work include creating url slugs for articles and other content so they can be published online, and also naming files in a specific way. To make my life and that of my team members easier, I decided to create a mini tool that offers some options to convert text.'
       },
       {
         id: 'par2',

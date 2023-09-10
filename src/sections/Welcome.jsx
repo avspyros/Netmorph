@@ -8,7 +8,7 @@ export default function Welcome() {
         <div className="section-bg"></div>
         <Container>
           <h1>Spyros Avgoustatos</h1>
-          <p className='description'>Flexible UI crafter with diverse experience in front-end development aiming to expand his knowledge across the vast spectrum of web technologies and to become more versatile by collaborating with team members to produce exciting projects for the modern day web.</p>
+          <p className='description'>Flexible UI developer with 6 years of diverse experience in front-end development aiming to expand his knowledge across the vast spectrum of web technologies and to become more versatile by collaborating with team members to produce exciting projects for the modern day web.</p>
           <Button
             text="Learn More"
             url="/story"

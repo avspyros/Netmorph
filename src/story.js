@@ -49,7 +49,7 @@ const story = [
     content: [
       { 
         id: "par1",
-        text: "By the end of 2018 and in the first months of 2019 we worked on a project for a customer who was going to launch a mobile app and she needed an official business website for the company and the product. The project was a static website designed by my friend and built by me with bootstrap 4. The process semented my understanding of layout and ui designs and their implementation."
+        text: "By the end of 2018 and in the first months of 2019 we worked on a project for a customer who was going to launch a mobile app and she needed an official business website for the company and the product. The project was a static website designed by my friend and built by me with bootstrap 4. The process cemented my understanding of layout and ui designs and their implementation."
       },
       {
         id: "par2",

@@ -48,7 +48,7 @@ export default function Contact() {
             </div>
             <div className="form-row">
               <div className="form-col">
-                <label>Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea name="message" rows={15} cols={15} required={true} />
               </div>
             </div>
@@ -63,9 +63,7 @@ export default function Contact() {
                 {message && <p className="form-msg">{message}</p>}
               </div>
             </div>
-
           </form>
-
           <div className="contact-info">
             <div>
               <h3>Address</h3>
