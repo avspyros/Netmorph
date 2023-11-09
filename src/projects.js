@@ -1,14 +1,14 @@
-import * as images from './assets'
+import * as images from './assets';
 
 const projects = [
   {
     id: 1,
-    slug: "1",
-    title: "Text Switcher",
-    shortDescription: "A simple tool for converting text, made with React.",
+    slug: '1',
+    title: 'Text Switcher',
+    shortDescription: 'A simple tool for converting text, made with React.',
     previewImg: images.textswitcher,
-    externalUrl: "https://text-switcher.netlify.app/",
-    blockBg: "bg-neutral",
+    externalUrl: 'https://text-switcher.netlify.app/',
+    blockBg: 'bg-neutral',
     description: [
       {
         id: 'par1',
@@ -16,45 +16,45 @@ const projects = [
       },
       {
         id: 'par2',
-        text: 'Since I was learning React.js at the time, I decided to practice that knowledge by building the mini tool with React. While not as challenging as a weather app I was trying to build at that time, still the project made me understand some concepts better and I still use it to this day.'
-      },
+        text: 'Since I was learning React.js at the time, I decided to practice that knowledge by building the mini tool with React. While not as challenging as a more complex app, still this project lead me to understand some concepts better and I still use it to this day.'
+      }
     ]
   },
   {
     id: 2,
-    slug: "2",
-    title: "Gamesboard",
-    shortDescription: "A multifunctional platform for boardgames",
-    previewImg: images.gamesboard, 
-    externalUrl: "https://gamesboard.gr",
-    blockBg: "bg-neutral-deep",
+    slug: '2',
+    title: 'Imisi Collection',
+    shortDescription: 'Fashion Products E-commerce website',
+    previewImg: images.imisi,
+    externalUrl: 'https://imisicollection.com',
+    blockBg: 'bg-neutral-deep',
     description: [
       {
         id: 'par1',
-        text: 'This personal project was born when I realized there was a disconnect among groups and individuals, who wanted to sell/buy used board games and relevant accessories or who had difficulty finding co-players or teams to play with.'
+        text: 'This e-commerce website came to be after the business owner was fed up with the old site malfuctioning which resulted in loss of revenue. In addition the whole maintenance and consulting process was non existent.'
       },
       {
         id: 'par2',
-        text: 'It is built on a WordPress theme with some customizations. As I have to take care of all the project’s aspects the final “product” is not ready yet since various parts of the platform are still being developed. Nevertheless, it is displayed here as a snapshot of a work in progress.'
+        text: 'The new eshop was built on WordPress and Woocommerece with some customizations (CSS and PHP). Design wise, the main goal was to achieve a minimalist and smooth experience with no distractions for the user.'
       },
       {
         id: 'par3',
-        text: 'The platform is in Greek as it targets Greek hobby enthusiasts and it is about to launch before the end of 2023.'
+        text: 'The challenge in this project was not only in terms of building it but mostly transferring the knowledge to the shop manager so that she would handle orders, edit content and engage in digital marketing more efficiently.'
       }
     ]
   },
   {
     id: 3,
-    slug: "3",
-    title: "Myhabeats",
-    shortDescription: "Official website of a behavioral health app",
-    previewImg: images.myhabeats, 
-    externalUrl: "https://myhabeats.com/",
-    blockBg: "bg-neutral-deeper",
+    slug: '3',
+    title: 'Myhabeats',
+    shortDescription: 'Official website of a behavioral health app',
+    previewImg: images.myhabeats,
+    externalUrl: 'https://myhabeats.com/',
+    blockBg: 'bg-neutral-deeper',
     description: [
       {
         id: 'par1',
-        text: 'This project represents my first official attempt to deliver a fully functional website to a customer. It would be a static business identity website with custom design created by my freelance colleague and collaborator.'
+        text: "This project represents my first official attempt to deliver a fully functional website to a customer. It's a static business identity website designed by my freelance partner."
       },
       {
         id: 'par2',
@@ -62,10 +62,10 @@ const projects = [
       },
       {
         id: 'par3',
-        text: 'Overall the result was ok and I sure learned many things along the way but this project is included here mostly as a reminder of how I should not do things in the future. If a had to build this site today I would use React.js (plus some useful packages) and probably Tailwind CSS with some customizations, making everything easier to maintain and with cleaner code.'
+        text: 'Overall the result was ok and I sure learned many things along the way but this project is included here mostly as a reminder of how I should not do things in the future. If a had to build this site today I would probably use React.js (plus some useful packages) and Tailwind CSS with some customizations, making everything easier to maintain.'
       }
     ]
   }
-]
+];
 
-export default projects
+export default projects;

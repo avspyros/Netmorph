@@ -1,19 +1,19 @@
-import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function PageNav() {
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
-    setOpen(!open)
-  }
+    setOpen(!open);
+  };
 
   const projectLinks = [
     { id: 1, slug: 1, txt: "Text Switcher" },
-    { id: 2, slug: 2, txt: "Gamesboard" },
+    { id: 2, slug: 2, txt: "Imisi Collection" },
     { id: 3, slug: 3, txt: "Myhabeats" }
-  ]
+  ];
 
   return (
     <div className="pagenav-wrapper" id="pagenav">
@@ -36,7 +36,7 @@ export default function PageNav() {
                         <li key={projectLink.id}>
                           <NavLink to={`/project/${projectLink.slug}`}>{projectLink.txt}</NavLink>
                         </li>
-                      )
+                      );
                     })
                   }
                 </ul>
@@ -46,6 +46,6 @@ export default function PageNav() {
         </nav>
       </div>
     </div>
-  )
+  );
 }
 

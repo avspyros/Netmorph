@@ -1,3 +1,3 @@
-export { default as textswitcher } from './text-switcher.png'
-export { default as gamesboard } from './gamesboard.png'
-export { default as myhabeats } from './myhabeats.png'
+export { default as textswitcher } from './text-switcher.png';
+export { default as imisi } from './imisicollection.png';
+export { default as myhabeats } from './myhabeats.png';

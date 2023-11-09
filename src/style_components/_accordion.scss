@@ -44,6 +44,6 @@
   p {
     font-size: 0.9rem;
 
-    @include mqf($screen-sm, 1rem);
+    @include mqf($screen-sm, 1.125rem);
   }
 }
